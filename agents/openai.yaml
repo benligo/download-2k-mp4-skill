@@ -1,0 +1,5 @@
+interface:
+  display_name: "Download H.264 MP4"
+  short_description: "Download configurable H.264 video, audio, and cover"
+  default_prompt: "Use $download-2k-mp4 for this link; ask me for resolution, audio, cover, and storage choices if I omitted them."
+
