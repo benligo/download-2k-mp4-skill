@@ -2,6 +2,16 @@
 
 A Codex skill that downloads an authorized video URL, selects the best video up to a requested resolution, optionally includes audio and a cover image, produces an H.264 MP4, and verifies the result.
 
+## Install as a Codex skill
+
+On Windows PowerShell:
+
+```powershell
+git clone https://github.com/benligo/download-2k-mp4-skill.git "$env:USERPROFILE\.codex\skills\download-2k-mp4"
+```
+
+Restart Codex after installation so the skill is discovered.
+
 ## Prompt format for AI use
 
 Give the AI the skill name and these fields:
@@ -31,6 +41,18 @@ Please provide: resolution, audio (yes/no), cover (yes/no), and storage (separat
 ```
 
 Defaults, when the user allows defaults: 2K maximum, audio yes, cover yes, separate folder.
+
+中文调用示例：
+
+```text
+使用 $download-2k-mp4
+链接：https://youtu.be/VIDEO_ID
+分辨率：2K
+声音：需要
+封面图：需要
+存储方式：每个视频单独文件夹
+保存位置：D:\Videos
+```
 
 ## Requirements
 
